@@ -7,3 +7,10 @@ resource "null_resource" "example" {
     command = "echo 'Hello, C++ World!'"
   }
 }
+
+resource "null_resource" "example2" {
+  # This resource does nothing
+  provisioner "local-exec" {
+    command = "echo 'Hello, java World!'"
+  }
+}
